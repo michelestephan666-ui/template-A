@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elio & Celine | Invitation</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Manrope:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =========================
+         OPENING
+    ========================== -->
+    <section class="opening" id="opening">
+        <!-- Couple photo behind the curtains -->
+        <div class="opening-photo"></div>
+        <!-- Dark cinematic overlay -->
+        <div class="opening-overlay"></div>
+        <!-- Floating petals, confined to this screen only -->
+        <div class="petals" aria-hidden="true">
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+            <span class="petal"></span>
+        </div>
+        <!-- Personalized greeting, filled in from the invite link -->
+        <p class="guest-name" id="guestName"></p>
+        <!-- Curtains -->
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+        <!-- Opening text -->
+        <div class="opening-content">
+            <p class="opening-small">
+                You are invited
+            </p>
+            <h1>
+                Elio <span>&</span> Celine
+            </h1>
+            <p class="opening-date">
+                07 · 07 · 2027
+            </p>
+            <button id="enterButton">
+                Open invitation
+            </button>
+        </div>
+    </section>
+    <!-- =========================
+         MUSIC
+    ========================== -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <!-- =========================
+         MAIN INVITATION
+    ========================== -->
+    <main id="invitation">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    Together with their families
+                </p>
+                <h2>
+                    Elio
+                    <span>&</span>
+                    Celine
+                </h2>
+                <p class="invitation-line">
+                    invite you to celebrate<br>
+                    the beginning of their forever
+                </p>
+                <div class="hero-date">
+                    <span>Wednesday</span>
+                    <strong>07</strong>
+                    <span>July · 2027</span>
+                </div>
+                <div class="scroll">
+                    Scroll to discover
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+             STORY
+        ========================== -->
+        <section class="story section">
+            <p class="section-label">
+                Our story
+            </p>
+            <h2>
+                A little story<br>
+                about us.
+            </h2>
+            <div class="story-copy">
+                <p>
+                    What started with a simple hello slowly became
+                    something neither of them expected.
+                </p>
+                <p>
+                    Through countless conversations, little adventures
+                    and unforgettable moments, Elio and Celine found
+                    something worth celebrating.
+                </p>
+                <p>
+                    And now, they would love to celebrate their next
+                    chapter with the people they love most.
+                </p>
+            </div>
+        </section>
+        <!-- =========================
+             PHOTO
+        ========================== -->
+        <section class="photo-section">
+            <div class="postcard">
+                <div class="postcard-photo">
+                    <img
+                        src="image3.jpg"
+                        alt="Elio and Celine"
+                    >
+                    <span>A moment before forever.</span>
+                </div>
+                <div class="postcard-quote">
+                    <p>
+                        “Many waters cannot quench love,
+                        neither can the floods drown it.”
+                    </p>
+                    <cite>Song of Solomon 8:7</cite>
+                </div>
+            </div>
+        </section>
+        <!-- =========================
+             EVENT
+        ========================== -->
+        <section class="event section">
+            <p class="section-label">
+                The celebration
+            </p>
+            <h2>
+                Join us for<br>
+                an evening to remember.
+            </h2>
+            <div class="event-details">
+                <div>
+                    <span>Date</span>
+                    <strong>7 July 2027</strong>
+                </div>
+                <div>
+                    <span>Time</span>
+                    <strong>5:00 PM</strong>
+                </div>
+                <div>
+                    <span>Church</span>
+                    <strong>Basilica Saint Paul, Harissa</strong>
+                </div>
+                <div>
+                    <span>Venue</span>
+                    <strong>Ocean Blue</strong>
+                </div>
+            </div>
+            <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="location"
+            >
+                View location
+            </a>
+        </section>
+        <!-- =========================
+             RSVP
+        ========================== -->
+        <section class="rsvp section">
+            <p class="section-label">
+                RSVP
+            </p>
+            <h2>
+                Will you<br>
+                be joining us?
+            </h2>
+            <p class="rsvp-subtitle">
+                Please confirm your attendance.
+            </p>
+            <form id="rsvpForm">
+                <!-- ATTENDANCE -->
+                <div class="field">
+                    <label>
+                        Will you be joining us?
+                    </label>
+                    <div class="attendance">
+                        <label>
+                            <input
+                                type="radio"
+                                name="attendance"
+                                value="Yes"
+                                required
+                            >
+                            <span>
+                                Joyfully, yes
+                            </span>
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                name="attendance"
+                                value="No"
+                            >
+                            <span>
+                                Sadly, no
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <!-- NUMBER OF GUESTS -->
+                <div class="field">
+                    <label for="guests">
+                        Number of guests
+                    </label>
+                    <select id="guests">
+                        <option value="1">
+                            1 guest
+                        </option>
+                        <option value="2">
+                            2 guests
+                        </option>
+                        <option value="3">
+                            3 guests
+                        </option>
+                        <option value="4">
+                            4 guests
+                        </option>
+                        <option value="5">
+                            5 guests
+                        </option>
+                    </select>
+                </div>
+                <!-- MESSAGE -->
+                <div class="field">
+                    <label for="message">
+                        A note for the couple
+                        <small>optional</small>
+                    </label>
+                    <textarea
+                        id="message"
+                        placeholder="Write something..."
+                    ></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="confirm"
+                >
+                    Confirm attendance
+                </button>
+            </form>
+            <!-- SUCCESS MESSAGE -->
+            <div
+                class="success"
+                id="success"
+            >
+                <div class="check">
+                    ✓
+                </div>
+                <h3>
+                    Thank you.
+                </h3>
+                <p>
+                    Your response has been received.
+                    We can't wait to celebrate with you.
+                </p>
+            </div>
+        </section>
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer>
+            <h3>
+                Elio & Celine
+            </h3>
+            <p>
+                With love, always.
+            </p>
+            <small>
+                An invitation by Invité
+            </small>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
