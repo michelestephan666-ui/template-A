@@ -298,6 +298,16 @@ body {
     margin-bottom: 40px;
     opacity: .8;
 }
+.family-invite {
+    max-width: 480px;
+    margin: 0 auto 40px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(.95rem, 2.4vw, 1.15rem);
+    line-height: 1.6;
+    letter-spacing: .01em;
+    opacity: .92;
+}
 .hero h2 {
     font-family: var(--script);
     font-size: clamp(5.5rem, 18vw, 10rem);
